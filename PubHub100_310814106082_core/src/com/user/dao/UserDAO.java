@@ -14,6 +14,7 @@ public class UserDAO {
 		
 		Connection connection = ConnectionUtil.getConnection();
 		String sql = "INSERT INTO user_details(NAME,email_id,PASSWORD) VALUES(?,?,?)";
+		
 		PreparedStatement pst =  connection.prepareStatement(sql);
 
 		pst.setString(1, user.getName());

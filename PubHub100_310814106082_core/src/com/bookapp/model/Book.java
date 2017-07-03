@@ -2,6 +2,7 @@ package com.bookapp.model;
 
 public class Book {
 	
+	
 	private int id;
 	private String book_name;
 	private String author;

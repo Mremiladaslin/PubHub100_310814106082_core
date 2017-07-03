@@ -9,6 +9,7 @@ public class ConnectionUtil {
 	public static Connection getConnection()
 	{
 		Connection connection=null;
+		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 		} catch (ClassNotFoundException e) {

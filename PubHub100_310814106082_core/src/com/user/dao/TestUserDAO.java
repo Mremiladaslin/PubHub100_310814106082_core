@@ -16,6 +16,7 @@ public class TestUserDAO {
 
 		UserDAO dao = new UserDAO();
 		dao.register(user);
+		
 		System.out.println(user);
 		
 		User user1=new User();
