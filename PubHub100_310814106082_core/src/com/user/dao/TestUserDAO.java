@@ -8,6 +8,7 @@ public class TestUserDAO {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		// TODO Auto-generated method stub
+		
 		User user = new User();
 		user.setName("jeni");
 		user.setEmail_id("jeni@gmail.com");

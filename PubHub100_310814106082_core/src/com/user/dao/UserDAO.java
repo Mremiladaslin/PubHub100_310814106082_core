@@ -9,7 +9,9 @@ import com.user.model.User;
 import com.bookapp.util.ConnectionUtil;
 
 public class UserDAO {
+	
 	public void register(User user) throws ClassNotFoundException, SQLException {
+		
 		Connection connection = ConnectionUtil.getConnection();
 		String sql = "INSERT INTO user_details(NAME,email_id,PASSWORD) VALUES(?,?,?)";
 		PreparedStatement pst =  connection.prepareStatement(sql);
@@ -21,6 +23,7 @@ public class UserDAO {
 
 	}
 	public boolean login (User user) throws ClassNotFoundException, SQLException {
+		
 		Connection connection = ConnectionUtil.getConnection();
 		String sql = "SELECT NAME from user_details where email_id=? AND PASSWORD=?";
 		PreparedStatement pst =  connection.prepareStatement(sql);
