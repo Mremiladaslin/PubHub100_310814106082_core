@@ -7,6 +7,7 @@ import com.user.model.User;
 public class TestUserDAO {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		
 		// TODO Auto-generated method stub
 		
 		User user = new User();
